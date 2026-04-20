@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+    <form method="post">
+
+        <p class="form-title">Create Account</p>
+        <p class="form-subtitle">Fill in your details to register</p>
+
+        <div id="userNameDiv">
+            <label for="username" id="usernameLabel">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username" autofocus />
+        </div>
+
+        <div id="emailDiv">
+            <label for="email" id="emailLabel">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        </div>
+
+        <div id="passwordDiv">
+            <label for="password" id="passwordLabel">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password" 
+                   minlength="8" maxlength="16" />
+        </div>
+
+        <div id="phoneDiv">
+            <label for="Phone_Number" id="phoneLabel">Number</label>
+            <input type="text" id="Phone_Number" name="Phone_Number" required placeholder="Enter your Number"   />
+        </div>
+
+        <div id="genderDiv">
+            <input type="radio" name="gender" id="male" value="male" checked />
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+
+        </div>
+
+        <div id="ageDiv">
+            <label for="Age" id="ageLabel">Age:</label>
+            <input type="date" id="Age" name="age" required value="2006-01-01" />
+
+        </div>
+
+        <input type="submit" value="Register" id="Register"/>
+
+        <div class="form-footer">
+            Already have an account? <a href="../Login/index.html">Login</a>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

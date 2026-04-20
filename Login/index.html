@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link rel="stylesheet" href="../Sign in/css/main.css" />
+</head>
+
+<body>
+
+    <form method="post">
+
+        <p class="form-title">Welcome Back</p>
+        <p class="form-subtitle">Login to your account</p>
+
+        <div id="userNameDiv">
+            <label for="username" id="usernameLabel">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username" autofocus />
+        </div>
+
+        <div id="passwordDiv">
+            <label for="password" id="passwordLabel">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password"
+                minlength="8" maxlength="16" />
+        </div>
+
+        <div>
+            <input type="submit" value="Login" id="Login" />
+        </div>
+
+
+        <div class="form-footer">
+            <span>
+                don't have an account?
+                <a href="../Sign in/index.html">sign up</a>
+            </span>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
